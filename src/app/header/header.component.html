@@ -1,26 +1,21 @@
-<h3>Inscription</h3>
+<div class="image">
+  <a routerLink="" href="">
+    <img src="/assets/icon-left-font-monochrome-black.svg" alt="logo" />
+  </a>
+</div>
 <div class="container">
-  <form>
-    <div class="d-flex flex-column form-group">
-      <label>Nom</label>
-      <input type="text" />
-    </div>
-    <div class="d-flex flex-column form-group">
-      <label>Prénom</label>
-      <input type="text" />
-    </div>
-    <div class="d-flex flex-column for">
-      <label>Email</label>
-      <input type="email" />
-    </div>
-    <div class="d-flex flex-column form-group">
-      <label>Mot de passe</label>
-      <input type="password" />
-    </div>
-    <div class="d-flex flex-column form-group">
-      <label>Confirmation</label>
-      <input type="password" />
-    </div>
-    <button class="btn btn-primary" style="margin-top: 20px">Valider</button>
+  <h3 class="btn-lg btn-secondary">Inscription</h3>
+  <form (ngSubmit)="submit()" [formGroup]="form">
+    <label>Nom</label>
+    <input formControlName="nom" class="form-control" type="text" />
+    <label>Prénom</label>
+    <input formControlName="prenom" class="form-control" type="text" />
+    <label>Email</label>
+    <input formControlName="email" class="form-control" type="email" />
+    <label>Mot de passe</label>
+    <input formControlName="password" class="form-control" type="password" />
+    <label>Confirmation</label>
+    <input formControlName="password" class="form-control" type="password" />
+    <button class="btn btn-secondary">Valider</button>
   </form>
 </div>

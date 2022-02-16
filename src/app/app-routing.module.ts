@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderconComponent } from './headercon/headercon.component';
+import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
-  { path: '', component: NavbarComponent},
-  { path: 'menu', component: HeaderComponent },
+  { path: '', component: HomeComponent },
+  { path: 'ins', component: HeaderComponent },
+  { path: 'conect', component: HeaderconComponent },
+  {path: 'nav', component: NavComponent},
 ];
 
 @NgModule({

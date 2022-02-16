@@ -1,0 +1,52 @@
+$texte: white;
+$bordure: black;
+$fond: #778beb;
+$fond2: #546de5;
+
+img {
+  position: absolute;
+  z-index: -1;
+  width: 65%;
+  margin: 120px;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-top: 40px;
+    margin: 50px;
+    text-decoration: underline;
+  }
+
+  .button { 
+    margin: 20px;
+    display: flex;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    color: $texte;
+    border-radius: 5px;
+    background: $fond;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    &:hover {
+      background: $fond2;
+    }
+  }
+}
+
+
+@media screen and (min-width: 300px) {
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
