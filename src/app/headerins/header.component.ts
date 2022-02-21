@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { scHema } from '../models/nav-post-model';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Input() models?: scHema[];
+
   public form: FormGroup = new FormGroup({
     nom: new FormControl('', Validators.required),
     prenom: new FormControl('', Validators.required),
@@ -14,8 +17,7 @@ export class HeaderComponent implements OnInit {
     password: new FormControl('', Validators.required),
   });
 
-  submit() {
-    console.log(this.form);
-  }
+  constructor() {}
+
   ngOnInit(): void {}
 }

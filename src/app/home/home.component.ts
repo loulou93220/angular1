@@ -6,13 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(
+  ) {}
 
   ngOnInit(): void {}
-  Creation() {
-    alert("c'est bien");
-  }
-  Connection() {
-    alert("Decidement c'est bien");
-  }
 }

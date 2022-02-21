@@ -5,7 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './headercon.component.html',
   styleUrls: ['./headercon.component.scss']
 })
+  
 export class HeaderconComponent implements OnInit {
+  
 
   constructor() { }
 
